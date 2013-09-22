@@ -1,0 +1,27 @@
+<h1>New Song</h1>
+
+<%= form_for :song, url: songs_path do |f| %>
+  <p>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+  </p>
+
+  <p>
+  <%= f.label :key %><br>
+  <%= f.text_field :key %>
+  </p>
+  
+  <p>
+  <%= f.label :setting %><br>
+  <%= f.text_field :setting %>
+  </p>
+  
+  <p>
+  <%= f.label :notes %><br>
+  <%= f.text_area :notes %>
+  </p>
+
+  <p>
+  <%= f.submit %>
+  </p>
+<% end %>
